@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "extends": "@ldb/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": true,
+    "declarationMap": true,
+    "sourceRoot": "../src",
+    "mapRoot": "../lib",
+    "rootDir": "src",
+    "outDir": "lib"
+  },
+  "include": ["src/**/*"]
+}

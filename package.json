@@ -1,0 +1,44 @@
+{
+  "name": "mongodb-ws-proxy",
+  "license": "ISC",
+  "type": "module",
+  "author": "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)",
+  "contributors": [
+    "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://git3.nexdev.net/l1/database/images/mongodb-ws-proxy.git"
+  },
+  "scripts": {
+    "test:dev": "vitest",
+    "test": "vitest run",
+    "test-coverage": "vitest run --coverage",
+    "build": "rimraf lib && tsc -p tsconfig.prod.json",
+    "build:dev": "rimraf lib && tsc",
+    "dev": "pnpm build:dev && node --enable-source-maps lib/index.js"
+  },
+  "files": [
+    "lib/**"
+  ],
+  "packageManager": "pnpm@10.15.0",
+  "dependencies": {
+    "@ldb/logger": "1.1.3",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@ldb/eslint-config": "0.2.4",
+    "@ldb/prettier-config": "0.1.3",
+    "@ldb/tsconfig": "22.0.1",
+    "@ldb/utils": "0.3.6-rc.1",
+    "@ldb/vitest-config": "0.1.4",
+    "@types/node": "22.10.0",
+    "@types/ws": "^8.18.1",
+    "@vitest/coverage-v8": "2.1.5",
+    "eslint": "9.15.0",
+    "prettier": "3.3.3",
+    "rimraf": "6.0.1",
+    "typescript": "5.7.2",
+    "vitest": "2.1.5"
+  }
+}
